@@ -8,9 +8,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
         :root {
-            --primary: #1e293b;
-            --secondary: #4f46e5;
-            --text-dark: #0f172a;
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --text-dark: #1e293b;
             --text-light: #475569;
             --bg-light: #f8fafc;
             --border: #e2e8f0;
@@ -42,8 +42,8 @@
 
         header {
             border-bottom: 2px solid var(--border);
-            padding-bottom: 24px;
-            margin-bottom: 24px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         .header-main {
@@ -60,11 +60,11 @@
         }
 
         .title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             color: var(--secondary);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
             margin-top: 4px;
         }
 
@@ -74,7 +74,7 @@
             margin-top: 12px;
             display: flex;
             flex-wrap: wrap;
-            gap: 12px 24px;
+            gap: 8px 20px;
         }
 
         .contact-info a {
@@ -93,7 +93,7 @@
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             color: var(--primary);
             text-transform: uppercase;
@@ -104,37 +104,28 @@
         }
 
         .summary {
-            font-size: 14px;
+            font-size: 13.5px;
             color: var(--text-light);
             text-align: justify;
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px 24px;
-        }
-
-        .skill-item {
-            font-size: 13px;
-            color: var(--text-dark);
+        .skills-list {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            gap: 8px;
         }
 
-        .skill-item::before {
-            content: "•";
-            color: var(--secondary);
-            font-weight: bold;
+        .skill-category {
+            font-size: 13px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        .skill-category strong {
+            color: var(--primary);
+            font-weight: 600;
             display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-            position: absolute;
-        }
-
-        .skill-item {
-            position: relative;
-            padding-left: 14px;
+            width: 180px;
         }
 
         .job, .project {
@@ -153,7 +144,7 @@
         }
 
         .job-title, .project-title {
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 700;
             color: var(--text-dark);
         }
@@ -161,7 +152,7 @@
         .job-company, .project-tagline {
             font-style: italic;
             color: var(--text-light);
-            font-size: 13px;
+            font-size: 12.5px;
         }
 
         .job-date, .project-date {
@@ -185,7 +176,7 @@
         }
 
         ul.bullets li::before {
-            content: "◦";
+            content: "•";
             color: var(--secondary);
             position: absolute;
             left: 0;
@@ -216,87 +207,86 @@
         <div class="header-main">
             <div>
                 <h1>Arham Ashfaq</h1>
-                <div class="title">Full-Stack WordPress Developer & Product Builder</div>
+                <div class="title">WordPress & Elementor Pro Developer</div>
             </div>
         </div>
         <div class="contact-info">
-            <span>📍 Pakistan</span>
-            <span>✉️ <a href="mailto:arham.ashfaqft@gmail.com">arham.ashfaqft@gmail.com</a></span>
-            <span>📞 +923096496878</span>
-            <span>🔗 <a href="https://linkedin.com/in/arhamashfaq" target="_blank">LinkedIn</a></span>
-            <span>🐙 <a href="https://github.com/arhamashfaq" target="_blank">GitHub</a></span>
+            <span>Location: Pakistan</span>
+            <span>Email: <a href="mailto:arham.ashfaqft@gmail.com">arham.ashfaqft@gmail.com</a></span>
+            <span>Phone: +923096496878</span>
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/arham-ashfaq-wp" target="_blank">linkedin.com/in/arham-ashfaq-wp</a></span>
         </div>
     </header>
 
     <section>
         <h2>Professional Summary</h2>
         <p class="summary">
-            Results-driven WordPress Developer and Full-Stack Product Builder with 2.5+ years of professional experience designing, developing, and scaling high-performance web applications and digital products. Proven track record of engineering custom Elementor widgets, publishing official WordPress directory plugins, and launching Next.js SaaS platforms. Specializes in custom PHP/JavaScript development, advanced ACF configurations, site recovery, and page speed optimization (hitting 90+ Core Web Vitals).
+            Results-driven WordPress Developer specializing in Elementor Pro and WooCommerce engineering with 2.5+ years of professional experience building, optimizing, and scaling complex websites and customized digital products. Expert at translating custom designs into pixel-perfect Elementor layouts, building custom widgets, developing tailored WordPress plugins, and implementing Advanced Custom Fields (ACF). Proven track record of improving site performance to hit 90+ Core Web Vitals mobile scores and managing system architectures for 100+ active websites.
         </p>
     </section>
 
     <section>
         <h2>Core Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item"><strong>WordPress & Elementor:</strong> Elementor Pro, Custom Widgets, ACF, Custom WooCommerce setups, CPTs</div>
-            <div class="skill-item"><strong>Core Development:</strong> Custom PHP plugins, Hook/Filters/Actions, JavaScript (ES6+), React/Next.js</div>
-            <div class="skill-item"><strong>Frontend Engineering:</strong> Responsive HTML5, Custom CSS3, Tailwind CSS, pixel-perfect Figma translations</div>
-            <div class="skill-item"><strong>APIs & SaaS:</strong> WP REST API, Stripe, OpenAI, Webhooks, custom JSON parsing pipelines</div>
-            <div class="skill-item"><strong>Optimization & Speed:</strong> Script deferral/compression, database optimization, 90+ PageSpeed Mobile scores</div>
-            <div class="skill-item"><strong>Server & DevOps:</strong> Hostinger, cPanel, DNS setup, secure SMTP routing, disaster site recovery</div>
+        <div class="skills-list">
+            <div class="skill-category"><strong>WordPress & Elementor:</strong> Elementor Pro, Custom Widget Development, ACF (Advanced Custom Fields), CPTs, Theme Customization</div>
+            <div class="skill-category"><strong>Backend Development:</strong> PHP Plugin Engineering, WordPress Action/Filter Hooks, AJAX, REST API Integration, SQL/Databases</div>
+            <div class="skill-category"><strong>eCommerce Systems:</strong> WooCommerce Customization, Dynamic Pricing, Payment Gateways, Variation Swatches, B2B Order Matrix</div>
+            <div class="skill-category"><strong>Frontend Engineering:</strong> Responsive HTML5, CSS3, Flexbox/Grid, Tailwind CSS, JavaScript (ES6+), Figma-to-WordPress translation</div>
+            <div class="skill-category"><strong>Optimization & Operations:</strong> Script Deferral/Minification, Asset Compression, Core Web Vitals, cPanel, secure DNS routing, SMTP Mail setup</div>
+            <div class="skill-category"><strong>Product & SaaS:</strong> React/Next.js platforms, WordPress Connector plugins development, secure webhook pipelines</div>
         </div>
     </section>
 
     <section>
-        <h2>Highlighted Projects (Proof of Work)</h2>
+        <h2>Highlighted Projects (WordPress & Elementor)</h2>
         
         <div class="project">
             <div class="project-header">
-                <div class="project-title">Feeddash — Collaborative Client Feedback SaaS & Plugin</div>
-                <div class="project-date">Live SaaS App</div>
-            </div>
-            <div class="project-tagline"><a href="https://www.feeddash.app/" target="_blank">feeddash.app</a></div>
-            <ul class="bullets">
-                <li>Developed a Next.js/React SaaS platform and custom WordPress connector plugin enabling collaborative live site annotations.</li>
-                <li>Engineered a secure WP REST API integration to store client comments, mockups, and media files directly on the client's own WordPress databases.</li>
-                <li>Built agency controls for automated task assignment, team routing, and developer notification inboxes.</li>
-            </ul>
-        </div>
-
-        <div class="project" style="margin-top: 12px;">
-            <div class="project-header">
-                <div class="project-title">Previu — Visual Client Feedback WordPress Plugin</div>
+                <div class="project-title">Previu — Visual Client Feedback WordPress Plugin for Elementor</div>
                 <div class="project-date">Published on WordPress.org</div>
             </div>
             <div class="project-tagline"><a href="https://wordpress.org/plugins/previu-visual-client-feedback-for-elementor/" target="_blank">wordpress.org/plugins/previu-visual-client-feedback-for-elementor</a></div>
             <ul class="bullets">
-                <li>Designed and published an open-source visual feedback tool that allows clients to pin comments directly onto live Elementor/WordPress web elements.</li>
-                <li>Implemented frontend element-coordinate mapping using custom JavaScript and saved annotation states via WordPress REST API.</li>
-                <li>Built a complete admin dashboard for feedback tracking, notifications, and settings.</li>
+                <li>Designed and published an open-source visual feedback extension allowing client front-end clicks to pin annotations directly onto live Elementor web elements.</li>
+                <li>Engineered front-end coordinate mapping using custom JavaScript, saving annotator pin states through WP REST API endpoints.</li>
+                <li>Built a complete admin dashboard for feedback tracking, notifications routing, and plugin settings.</li>
             </ul>
         </div>
 
         <div class="project" style="margin-top: 12px;">
             <div class="project-header">
-                <div class="project-title">Bank Statement Converter Tool — Financial Parser SaaS</div>
-                <div class="project-date">Live SaaS Utility</div>
+                <div class="project-title">Ultimate Shop Widget for Elementor</div>
+                <div class="project-date">Custom WooCommerce Addon</div>
             </div>
-            <div class="project-tagline"><a href="https://www.bankstatementconverttool.com/" target="_blank">bankstatementconverttool.com</a></div>
+            <div class="project-tagline">Dynamic Product Layout Widget</div>
             <ul class="bullets">
-                <li>Engineered a web-based client-side SaaS utility that automatically parses PDF bank statements into clean, structured CSV/Excel files.</li>
-                <li>Built the frontend interface, secure parsing scripts, and client-side download pipeline to protect financial details.</li>
+                <li>Developed a custom Elementor Pro eCommerce addon featuring a drag-and-drop dynamic card layout builder, custom AJAX filters, and query search inputs.</li>
+                <li>Integrated live variation color swatches, dynamic product listings, hover effects, and built-in quick-view lightboxes.</li>
             </ul>
         </div>
 
         <div class="project" style="margin-top: 12px;">
             <div class="project-header">
-                <div class="project-title">OptiSnap — Product Layout Designer Utility</div>
-                <div class="project-date">Live Tool</div>
+                <div class="project-title">Feeddash — Collaborative Client Feedback SaaS & Connector Plugin</div>
+                <div class="project-date">Live SaaS App</div>
             </div>
-            <div class="project-tagline"><a href="https://optisnap.app/" target="_blank">optisnap.app</a></div>
+            <div class="project-tagline"><a href="https://www.feeddash.app/" target="_blank">feeddash.app</a></div>
             <ul class="bullets">
-                <li>Developed a web-based product screenshot layout designer featuring drag-and-drop workspace controls, real-time image filters, and custom aspect ratios.</li>
-                <li>Integrated custom canvas resizing scripts and image compression pipelines to optimize file sizes for store owners.</li>
+                <li>Built a React SaaS platform and custom WordPress connector plugin enabling multi-site visual annotations and reviews.</li>
+                <li>Connected secure WP REST API integrations to store client comments, mockups, and media files directly on the client's own WordPress databases.</li>
+                <li>Developed automated developer assignment logs and notification dashboards.</li>
+            </ul>
+        </div>
+
+        <div class="project" style="margin-top: 12px;">
+            <div class="project-header">
+                <div class="project-title">Qentrox Bulk Variation Grid for WooCommerce</div>
+                <div class="project-date">Published on WordPress.org</div>
+            </div>
+            <div class="project-tagline"><a href="https://wordpress.org/plugins/qentrox-bulk-variation-grid-for-woocommerce/" target="_blank">wordpress.org/plugins/qentrox-bulk-variation-grid-for-woocommerce</a></div>
+            <ul class="bullets">
+                <li>Built a WooCommerce B2B extension that replaces default quantity dropdowns with a variable order matrix grid.</li>
+                <li>Handled instant bulk add-to-cart operations using performance-optimized AJAX handlers to manage high-traffic stores.</li>
             </ul>
         </div>
     </section>
@@ -307,7 +297,7 @@
         <div class="job">
             <div class="job-header">
                 <div>
-                    <span class="job-title">WordPress & Systems Developer</span> 
+                    <span class="job-title">WordPress & Elementor Developer</span> 
                     <span class="job-company">| Remote Contract</span>
                 </div>
                 <div class="job-date">Jan 2024 — Present</div>
