@@ -791,75 +791,96 @@
                 <div class="portfolio-item-wrapper" data-category="custom">
                     <div class="portfolio-group margin-top-lg">
                         <h3 class="group-title">Non-WordPress Custom Applications</h3>
-                        <div class="projects-split-grid">
-                            
-                            <!-- StatementToCSV -->
-                            <div class="split-project-card">
-                                <div class="browser-mockup card-mockup">
+                        
+                        <!-- Bank Statement Converter Tool -->
+                        <div class="featured-project-card">
+                            <div class="project-info">
+                                <div class="project-badge-row">
+                                    <span class="badge highlight">Custom SaaS</span>
+                                    <a href="https://www.bankstatementconverttool.com/" target="_blank" class="project-link">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                                <h4 class="project-name">Bank Statement Converter Tool</h4>
+                                <p class="project-text">
+                                    A secure, client-side SaaS utility that automatically parses PDF bank statements and outputs clean, structured CSV sheets for accountants. Engineered with pure frontend security to protect financial details.
+                                </p>
+                                <div class="project-skills">
+                                    <span>HTML5 / CSS3</span>
+                                    <span>JavaScript ES6</span>
+                                    <span>PDF Parser API</span>
+                                    <span>Client-Side Security</span>
+                                </div>
+                            </div>
+                            <div class="project-visual">
+                                <div class="browser-mockup">
                                     <div class="browser-bar">
                                         <span class="dot red"></span>
                                         <span class="dot yellow"></span>
                                         <span class="dot green"></span>
-                                        <span class="browser-title">statementtocsv.com</span>
+                                        <span class="browser-title" id="bankstatement-browser-title">bankstatementconverttool.com</span>
                                     </div>
-                                    <div class="browser-body flex-center bg-green">
-                                        <div class="mock-saas-ui">
-                                            <div class="drag-box">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                                                <span>statement.pdf</span>
-                                            </div>
-                                        </div>
+                                    <div class="browser-body no-padding">
+                                        <img src="assets/bankstatementconverttool/Home.png" alt="Bank Statement Converter Screenshot" class="project-screenshot scrollable-lightbox-trigger" id="bankstatement-img" data-url="bankstatementconverttool.com">
                                     </div>
                                 </div>
-                                <div class="split-card-content">
-                                    <div class="project-badge-row">
-                                        <span class="badge">Custom SaaS</span>
-                                        <span class="status">Live Product</span>
+                                <!-- Page Switcher -->
+                                <div class="switcher-wrapper">
+                                    <button class="switcher-arrow prev" data-dir="left" disabled>&larr;</button>
+                                    <div class="screenshot-switcher">
+                                        <button class="switcher-btn active" data-target="bankstatement-img" data-title="bankstatementconverttool.com" data-src="assets/bankstatementconverttool/Home.png">Home</button>
+                                        <button class="switcher-btn" data-target="bankstatement-img" data-title="bankstatementconverttool.com/pricing" data-src="assets/bankstatementconverttool/Pricing.png">Pricing</button>
+                                        <button class="switcher-btn" data-target="bankstatement-img" data-title="bankstatementconverttool.com/blog" data-src="assets/bankstatementconverttool/Blog.png">Blog</button>
                                     </div>
-                                    <h4>StatementToCSV</h4>
-                                    <p>A full-stack document utility that automatically parses PDF bank statements and outputs cleaned, structured CSV sheets for accountants.</p>
-                                    <div class="project-skills">
-                                        <span>HTML5 / CSS3</span>
-                                        <span>JavaScript</span>
-                                        <span>OCR Parser</span>
-                                    </div>
+                                    <button class="switcher-arrow next" data-dir="right">&rarr;</button>
                                 </div>
                             </div>
-
-                            <!-- SelfSnap -->
-                            <div class="split-project-card">
-                                <div class="browser-mockup card-mockup">
-                                    <div class="browser-bar">
-                                        <span class="dot red"></span>
-                                        <span class="dot yellow"></span>
-                                        <span class="dot green"></span>
-                                        <span class="browser-title">selfsnap.com</span>
-                                    </div>
-                                    <div class="browser-body flex-center bg-purple">
-                                        <div class="mock-saas-ui">
-                                            <div class="ai-box">
-                                                <div class="ai-ring"></div>
-                                                <span>Processing AI Photo...</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="split-card-content">
-                                    <div class="project-badge-row">
-                                        <span class="badge">AI Web App</span>
-                                        <span class="status">Live Product</span>
-                                    </div>
-                                    <h4>SelfSnap</h4>
-                                    <p>An AI product photography application built for online store owners, converting raw product snaps into studio-quality graphic assets.</p>
-                                    <div class="project-skills">
-                                        <span>HTML5 / CSS3</span>
-                                        <span>JavaScript</span>
-                                        <span>AI API Endpoint</span>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <!-- OptiSnap -->
+                        <div class="featured-project-card margin-top-lg">
+                            <div class="project-info">
+                                <div class="project-badge-row">
+                                    <span class="badge highlight">AI Web App</span>
+                                    <a href="https://optisnap.app/" target="_blank" class="project-link">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                                <h4 class="project-name">OptiSnap</h4>
+                                <p class="project-text">
+                                    A high-converting product snapshot layout designer. Features drag-and-drop workspace controls, custom aspect ratios, real-time filters, and optimized file compression pipelines to help store owners output graphics assets.
+                                </p>
+                                <div class="project-skills">
+                                    <span>HTML5 / CSS3</span>
+                                    <span>JavaScript ES6</span>
+                                    <span>Canvas API</span>
+                                    <span>Image Compression</span>
+                                </div>
+                            </div>
+                            <div class="project-visual">
+                                <div class="browser-mockup">
+                                    <div class="browser-bar">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                        <span class="browser-title" id="optisnap-browser-title">optisnap.app</span>
+                                    </div>
+                                    <div class="browser-body no-padding">
+                                        <img src="assets/optisnap/Home.png" alt="OptiSnap Screenshot" class="project-screenshot scrollable-lightbox-trigger" id="optisnap-img" data-url="optisnap.app">
+                                    </div>
+                                </div>
+                                <!-- Page Switcher -->
+                                <div class="switcher-wrapper">
+                                    <button class="switcher-arrow prev" data-dir="left" disabled>&larr;</button>
+                                    <div class="screenshot-switcher">
+                                        <button class="switcher-btn active" data-target="optisnap-img" data-title="optisnap.app" data-src="assets/optisnap/Home.png">Home</button>
+                                        <button class="switcher-btn" data-target="optisnap-img" data-title="optisnap.app/workspace" data-src="assets/optisnap/workspace.png">Workspace</button>
+                                    </div>
+                                    <button class="switcher-arrow next" data-dir="right" disabled>&rarr;</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
