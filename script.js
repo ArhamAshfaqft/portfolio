@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.02 // Fixes blank sections on mobile by triggering reveal earlier
     };
 
     const revealOnScroll = new IntersectionObserver((entries, observer) => {
@@ -22,6 +22,37 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach(section => {
         section.classList.add('reveal');
         revealOnScroll.observe(section);
+    });
+
+    // ==========================================
+    // Mobile Navigation Menu Toggle
+    // ==========================================
+    const navToggle = document.getElementById('nav-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    if (navToggle && navbar) {
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navbar.classList.toggle('nav-open');
+            document.body.classList.toggle('nav-menu-active');
+        });
+    }
+
+    // Close menu when clicking links
+    const mobileLinks = document.querySelectorAll('.nav-links a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbar) navbar.classList.remove('nav-open');
+            document.body.classList.remove('nav-menu-active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navbar && navbar.classList.contains('nav-open') && !navbar.contains(e.target)) {
+            navbar.classList.remove('nav-open');
+            document.body.classList.remove('nav-menu-active');
+        }
     });
 
     // ==========================================
