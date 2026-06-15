@@ -185,17 +185,27 @@
 
         /* Print styling to generate perfect PDF */
         @media print {
+            @page {
+                size: letter;
+                margin: 0.5in;
+            }
             body {
                 background-color: #fff;
                 padding: 0;
+                color: #000;
             }
             .resume-container {
+                width: 100%;
+                max-width: 100%;
                 box-shadow: none;
                 padding: 0;
                 border-top: none;
+                border-radius: 0;
             }
             .contact-info a {
                 border: none;
+                text-decoration: none;
+                color: var(--text-dark);
             }
         }
     </style>
