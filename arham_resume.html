@@ -25,16 +25,16 @@
         body {
             font-family: 'Inter', sans-serif;
             color: var(--text-dark);
-            line-height: 1.5;
+            line-height: 1.35;
             background-color: var(--bg-light);
-            padding: 40px 20px;
+            padding: 15px 5px;
         }
 
         .resume-container {
             max-width: 800px;
             margin: 0 auto;
             background: #fff;
-            padding: 40px;
+            padding: 24px;
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             border-radius: 8px;
             border-top: 6px solid var(--secondary);
@@ -42,8 +42,8 @@
 
         header {
             border-bottom: 2px solid var(--border);
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .header-main {
@@ -53,28 +53,28 @@
         }
 
         h1 {
-            font-size: 28px;
+            font-size: 22px;
             font-weight: 700;
             color: var(--primary);
             letter-spacing: -0.5px;
         }
 
         .title {
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
             color: var(--secondary);
             text-transform: uppercase;
             letter-spacing: 0.8px;
-            margin-top: 4px;
+            margin-top: 1px;
         }
 
         .contact-info {
-            font-size: 13px;
+            font-size: 11.5px;
             color: var(--text-light);
-            margin-top: 12px;
+            margin-top: 8px;
             display: flex;
             flex-wrap: wrap;
-            gap: 8px 20px;
+            gap: 4px 16px;
         }
 
         .contact-info a {
@@ -89,47 +89,52 @@
         }
 
         section {
-            margin-bottom: 24px;
+            margin-bottom: 12px;
         }
 
         h2 {
-            font-size: 14px;
+            font-size: 12.5px;
             font-weight: 700;
             color: var(--primary);
             text-transform: uppercase;
             letter-spacing: 0.5px;
             border-bottom: 1px solid var(--border);
-            padding-bottom: 6px;
-            margin-bottom: 12px;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
         }
 
         .summary {
-            font-size: 13.5px;
+            font-size: 12px;
             color: var(--text-light);
             text-align: justify;
+            line-height: 1.35;
         }
 
         .skills-list {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 4px;
         }
 
         .skill-category {
-            font-size: 13px;
+            font-size: 12px;
             color: var(--text-light);
-            line-height: 1.5;
+            line-height: 1.3;
         }
 
         .skill-category strong {
             color: var(--primary);
             font-weight: 600;
             display: inline-block;
-            width: 180px;
+            width: 155px;
         }
 
         .job, .project {
-            margin-bottom: 16px;
+            margin-bottom: 8px;
+        }
+
+        .project + .project {
+            margin-top: 8px;
         }
 
         .job:last-child, .project:last-child {
@@ -140,11 +145,11 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 4px;
+            margin-bottom: 1px;
         }
 
         .job-title, .project-title {
-            font-size: 13.5px;
+            font-size: 12px;
             font-weight: 700;
             color: var(--text-dark);
         }
@@ -152,27 +157,28 @@
         .job-company, .project-tagline {
             font-style: italic;
             color: var(--text-light);
-            font-size: 12.5px;
+            font-size: 11px;
         }
 
         .job-date, .project-date {
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-light);
             font-weight: 500;
         }
 
         ul.bullets {
             list-style-type: none;
-            padding-left: 14px;
-            margin-top: 4px;
+            padding-left: 12px;
+            margin-top: 1px;
         }
 
         ul.bullets li {
-            font-size: 13px;
+            font-size: 12px;
             color: var(--text-light);
             position: relative;
-            margin-bottom: 4px;
-            padding-left: 12px;
+            margin-bottom: 1.5px;
+            padding-left: 10px;
+            line-height: 1.3;
         }
 
         ul.bullets li::before {
@@ -187,7 +193,7 @@
         @media print {
             @page {
                 size: letter;
-                margin: 0.5in;
+                margin: 0.3in 0.35in;
             }
             body {
                 background-color: #fff;
@@ -225,6 +231,7 @@
             <span>Email: <a href="mailto:arham.ashfaqft@gmail.com">arham.ashfaqft@gmail.com</a></span>
             <span>Phone: +923096496878</span>
             <span>LinkedIn: <a href="https://www.linkedin.com/in/arham-ashfaq-wp" target="_blank">linkedin.com/in/arham-ashfaq-wp</a></span>
+            <span>Portfolio: <a href="https://www.arhamashfaq.com/" target="_blank">arhamashfaq.com</a></span>
         </div>
     </header>
 
@@ -257,50 +264,34 @@
             </div>
             <div class="project-tagline"><a href="https://interiorsredefined.com.au/" target="_blank">interiorsredefined.com.au</a></div>
             <ul class="bullets">
-                <li>Developed a high-end interior styling website built entirely with Elementor Pro, advanced ACF (Advanced Custom Fields), and custom post types.</li>
-                <li>Engineered custom design portfolio galleries, responsive contact pipelines, and optimized load times to maintain visual alignment across all device viewports.</li>
+                <li>Developed a premium styling site using Elementor Pro, ACF, and CPTs, engineering custom portfolio galleries and responsive layouts.</li>
             </ul>
         </div>
 
-        <div class="project" style="margin-top: 12px;">
+        <div class="project">
             <div class="project-header">
                 <div class="project-title">TMA VoIP — Telecom Services Portal & Speed Checker</div>
                 <div class="project-date">Live Website</div>
             </div>
             <div class="project-tagline"><a href="https://tmavoip.com/" target="_blank">tmavoip.com</a></div>
             <ul class="bullets">
-                <li>Built a custom corporate telecom portal featuring interactive plan selectors and a real-time bandwidth speed checker simulator.</li>
-                <li>Designed custom Elementor page templates, contact capture pipelines, and speed-optimized resource delivery scripts.</li>
+                <li>Built a custom corporate telecom portal featuring interactive plan selectors and a real-time bandwidth speed checker.</li>
             </ul>
         </div>
 
-        <div class="project" style="margin-top: 12px;">
+        <div class="project">
             <div class="project-header">
                 <div class="project-title">The Head Stone Hero — Memorial eCommerce Builder</div>
                 <div class="project-date">Live Website</div>
             </div>
             <div class="project-tagline"><a href="https://theheadstonehero.com/" target="_blank">theheadstonehero.com</a></div>
             <ul class="bullets">
-                <li>Created a specialized Elementor Pro WooCommerce store featuring memorial builder configurations and tailored pricing panels.</li>
-                <li>Connected secure payment checkouts and customized layouts for high-volume transactions.</li>
+                <li>Created a specialized Elementor Pro WooCommerce store featuring memorial builder configurations and secure checkouts.</li>
             </ul>
         </div>
 
-        <div class="project" style="margin-top: 12px;">
-            <div class="project-header">
-                <div class="project-title">The SPS Connection — Clinic Onboarding & Sensory Portal</div>
-                <div class="project-date">Live Website</div>
-            </div>
-            <div class="project-tagline"><a href="https://thespconnection.com/" target="_blank">thespconnection.com</a></div>
-            <ul class="bullets">
-                <li>Engineered a pediatric therapy site utilizing Elementor Pro for responsive client bookings and structured clinic resources.</li>
-                <li>Designed interactive clinical team directories and custom parent onboarding pipelines.</li>
-            </ul>
-        </div>
-
-        <div style="text-align: center; margin-top: 20px; padding: 10px; background-color: var(--bg-light); border-radius: 6px; border: 1px dashed var(--border); font-size: 13px; color: var(--text-light);">
-            To view my full portfolio of custom WordPress plugins, Elementor widgets, and SaaS platforms, visit: 
-            <a href="https://www.arhamashfaq.com/" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--secondary);">arhamashfaq.com</a>
+        <div style="margin-top: 6px; font-size: 11.5px; color: var(--text-light); font-style: italic; text-align: center;">
+            View my full portfolio of custom websites, plugins, Elementor widgets, and SaaS platforms at <a href="https://www.arhamashfaq.com/" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">arhamashfaq.com</a>
         </div>
     </section>
 
@@ -316,12 +307,10 @@
                 <div class="job-date">Jan 2024 - Present</div>
             </div>
             <ul class="bullets">
-                <li>Built and launched 150+ custom WordPress websites and landing pages utilizing Elementor Pro, ACF (Advanced Custom Fields), and custom post types for premium layout designs.</li>
-                <li>Designed and engineered custom Elementor widgets, addons, and core WordPress plugins to solve specific client/agency requirements, eliminating reliance on bloated third-party tools.</li>
-                <li>Developed full-stack SaaS platforms, custom software, and REST API bridges (such as Feeddash), connecting Next.js dashboards with WordPress sites for team/client revisions.</li>
-                <li>Integrated Stripe payment checkouts, WooCommerce subscription models, and membership systems for international eCommerce platforms and client portals.</li>
-                <li>Optimized heavy Elementor page builders and asset loading pipelines (CSS/JS deferrals, asset minification) to consistently achieve 90+ PageSpeed Mobile scores.</li>
-                <li>Managed hosting environments (cPanel), Cloudflare DNS, secure server migrations, SSL certificates, and SMTP/SES delivery setups, troubleshooting layout/plugin conflicts independently.</li>
+                <li>Built and launched 150+ custom WordPress sites using Elementor Pro, ACF, and CPTs, engineering custom widgets and plugins to replace bloated third-party add-ons.</li>
+                <li>Developed full-stack SaaS platforms, custom software, and REST API bridges (e.g., Feeddash) linking Next.js dashboards with WordPress sites.</li>
+                <li>Integrated Stripe payment checkouts, WooCommerce subscriptions, and custom membership portals for international clients.</li>
+                <li>Consistently achieved 90+ PageSpeed scores via custom optimization pipelines and managed server migrations, DNS, and deliverability configurations.</li>
             </ul>
         </div>
     </section>
@@ -330,8 +319,8 @@
         <h2>Education</h2>
         <div class="job-header">
             <div>
-                <span class="job-title">Bachelor of Science in Applied Sciences</span>
-                <span class="job-company">| University of Punjab, Pakistan</span>
+                <span class="job-title">Bachelor of Science</span>
+                <span class="job-company">| University of Agriculture Faisalabad</span>
             </div>
             <div class="job-date">2020 - 2024</div>
         </div>
